@@ -1,0 +1,51 @@
+.project-card {
+  height: 220px;
+  background-color: black;
+  color: white;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  border-style: none;
+  width: 500px;
+  border-radius: 20px;
+}
+
+.project-card:hover {
+  border-style: solid;
+  border-width: 1px;
+  border-color: yellow;
+}
+
+.project-cards-container {
+  margin-top: 180px;
+  margin-left: -4px;
+}
+
+.project-card-image {
+  object-fit: contain;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.project-card-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 400px;
+}
+
+.project-card-description ul {
+  padding-left: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.project-title {
+  font-size: 30px;
+}
+
+.code-link {
+  text-decoration: underline;
+}
+
+

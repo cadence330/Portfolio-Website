@@ -5,18 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Domonic's Website</title>
   <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/home.css">
+  <link rel="stylesheet" href="styles/frontend_projects.css">
+  <link rel="stylesheet" href="styles/home_animation.css">
+  <link rel="stylesheet" href="styles/toolbars.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,700;1,400&family=Roboto:wght@400;500;700&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
-
 </head>
 <body>
   <div class="side-bar-container">
     <div class="side-bar-title title">
-      <a>My Work</a>
+      <a href="index.html">My Work</a>
     </div>
     <div class="side-bar home">
-      <a>Home</a>
+      <a href="index.html">Home</a>
     </div>
     <div class="side-bar projects">
       <a>Projects</a>
@@ -40,47 +43,24 @@
       <img src="images/home-profile-image.JPEG" class="home-profile-image">
     </div>
   </div>
-
   <div class="content-container">
     <div class="content-title-container">
       <p class="content-title">I build and test applications..</p>
-        <button class="projects-button" onclick="
-        document.querySelector('.content-projects-container').classList.add('is-showing');
-        document.querySelector('.content-contact-button-container').classList.add('is-showing');
-        ">
+        <button class="projects-button">
           <img src="images/icons/down-arrow-icon.png">
         </button>
     </div>
     <div class="content-projects-container">
-      <div class="content-projects-card">
-        <div class="content-projects-title">
-          <div>Automation Projects</div>`${home-card-name}`
-          <div>
-            <img class="content-projects-image">
-          </div>
-          <div class="content-projects-description">
-            `${home-card-description}`
-          </div>
-        </div>
-      </div>
-
-      <div class="content-projects-card">
-        <div class="content-projects-title">
-          <div>Automation Projects</div>`${home-card-name}`
-          <div>
-            <img class="content-projects-image">
-          </div>
-          <div class="content-projects-description">
-            `${home-card-description}`
-          </div>
-        </div>
-      </div>
     </div>
-    <p class="content-contact-button-container">
+    
+    <p class="content-contact-container">
       <button class="content-contact-button">
         CONTACT ME
       </button>
     </p>
   </div>
+
+  <script type="module" src="scripts/home.js"></script>
+  <script type="module" src="scripts/sidebar.js"></script>
 </body>
 </html>

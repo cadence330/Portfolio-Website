@@ -1,0 +1,48 @@
+
+/* Define the typing animation */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Apply the animation to the content title */
+.content-title {
+  font-size: 30px;
+  color: white;
+  overflow: hidden; /* Hide overflowing text */
+  white-space: nowrap; /* Prevent text from wrapping */
+  animation: typing 5s steps(40) 1s 1 normal both, /* Typing effect */
+             blink-caret 0.75s steps(1) infinite; /* Blinking cursor */
+}
+
+/* Define a blinking cursor animation */
+@keyframes blink-caret {
+  from, to {
+    border-right: 2px solid transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
+
+/* Apply the animation to the projects button */
+.projects-button {
+  position: relative;
+  right: 0;
+  padding-top: 14px;
+  animation: fadeIn 1s 6s ease-in-out both; /* Fade-in effect after typing */
+}
+
+/* Define a fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

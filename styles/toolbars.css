@@ -1,0 +1,72 @@
+
+/***********Sidebar******
+Open Sidebar with button in the top left corner
+transition width 0 to whatever it currently is
+Use Javascript to make addition section show up under projects when hovering. Sections are Automation projects and frontEnd projects
+******/
+
+.side-bar-container {
+  color: white;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 200px;
+  padding-top: 20px;
+  padding-left: 20px;
+  font-family: 'Ubuntu', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.side-bar:hover {
+  background-color: gray;
+}
+
+.title, .home, .projects, .biography, .contact {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 6px;
+}
+
+.side-bar-title {
+  font-size: 28px;
+  padding-bottom: 36px;
+}
+
+.automation-projects:hover,
+.frontend-projects:hover {
+  background-color: darkgray;
+}
+
+
+/************TopBar*****************/
+
+.top-bar-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  position: fixed;
+  top: 0px;  
+  right: 0px;
+  width: auto;
+  padding-top: 10px;
+  padding-right: 10px;
+}
+
+.top-bar-name {
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.top-bar-image-container {
+  padding-left: 10px;
+}
+
+.home-profile-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  object-fit: cover;
+}
