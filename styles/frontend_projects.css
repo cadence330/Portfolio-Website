@@ -8,12 +8,13 @@
   border-style: none;
   width: 500px;
   border-radius: 20px;
+  border-style: solid;
 }
 
 .project-card:hover {
-  border-style: solid;
+  color: gray;
+  border-color: white;
   border-width: 1px;
-  border-color: yellow;
 }
 
 .project-cards-container {

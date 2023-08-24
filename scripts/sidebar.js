@@ -1,6 +1,5 @@
 
 export function changeContentContainer () {
-    console.log('hello')
     document.querySelector('.content-container').innerHTML = 
     `
     <div class="project-cards-container">
