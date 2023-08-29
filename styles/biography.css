@@ -1,0 +1,48 @@
+.biography-content {
+  position: relative;
+  height: 600px;
+  width: 60vw;
+  margin-top: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-container {
+  background-color: wheat;
+  height: 600px;
+  width: 20vw;
+  border-radius: 10px;
+  z-index: 1;
+  position: absolute;
+  left: 0;
+}
+
+.about-me {
+  height: 300px;
+  width: 50vw;
+  background-color: rgb(206, 196, 9);
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  border-radius: 10px;
+  margin-left: 40px;
+}
+
+.about-me-title-container {
+  display: flex;
+  justify-content: center;
+}
+
+.about-me-text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-me-text {
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  line-height: 20px;
+}

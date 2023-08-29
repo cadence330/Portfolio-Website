@@ -1,35 +1,45 @@
+const frontEndCards = [{
+  id: 'id1',
+  name: "Ping Pong",
+  image: "images/ping-ping-image.png",
+  description: 'Created a playable game that keeps score',
+  link: 'https://github.com/cadence330/Ping_Pong'
+},
+{
+  id: 'id2',
+  name: `Quote Generator`,
+  image: "images/kanye-project.png",
+  description: 'Use a free API to post a message on a designed canvas',
+  link: ''
+},
+{
+  id: 'id3',
+  name: 'Automated Birthday Wisher',
+  image: 'images/birthday_project.jfif',
+  description: "Based on csv data, automatically send email to user with birthday when the day comes",
+  link: "",
+}]
 
-export function changeContentContainer () {
-    document.querySelector('.content-container').innerHTML = 
-    `
-    <div class="project-cards-container">
-      <div class="project-card">
-        <img src="images/ping-ping-image.png" class="project-card-image">
-        <div class="project-card-description">
-          <ul class="project-title">Ping Pong</ul>
-          <ul class="project-description">Created a playable game that keeps score</ul>
-          <ul class="project-tech">Turtle Library, UI</ul>
-          <ul>Code <a class="code-link">Here</a></ul>
+export function goToFrontEndPage () {
+    let cardHTML = ''
+    frontEndCards.forEach((card) => {
+      cardHTML += `
+        <div class="project-cards-container">
+          <div class="project-card" id=${card.id}>
+            <img src=${card.image} class="project-card-image">
+            <div class="project-card-description">
+              <ul class="project-title">${card.name}</ul>
+              <ul class="project-description">${card.description}</ul>
+              <ul class="project-tech">Turtle Library, UI</ul>
+              <ul>Code <a href=${card.link} class="code-link">Here</a></ul>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="project-card">
-        <img src="images/kanye-project.png" class="project-card-image">
-        <div class="project-card-description">
-          <ul class="project-title">Quote Generator</ul>
-          <ul class="project-description">Use a free API to post a message on a designed canvas</ul>
-          <ul class="project-tech">API, Tkinter</ul>
-          <ul>Code <a class="code-link">Here</a></ul>
-        </div>
-      </div>
-      <div class="project-card">
-        <img src="images/birthday_project.jfif" class="project-card-image">
-        <div class="project-card-description">
-          <ul class="project-title">Automated Birthday Wisher</ul>
-          <ul class="project-description">Based on csv data, automatically send email to user with birthday when the day comes</ul>
-          <ul class="project-tech">Pandas Library, API, SMTP</ul>
-          <ul>Code <a class="code-link">Here</a></ul>
-        </div>
-      </div>
-    </div>
-    `;
+      `;
+    })
+
+    let projectsContainer = 
+    `<div class="project-cards-container">` + cardHTML + `</div>`
+    document.querySelector('.content-container').innerHTML = projectsContainer;
+    return projectsContainer;
 };
