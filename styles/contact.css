@@ -1,3 +1,7 @@
+label {
+  display: block;
+}
+
 .contact-field {
   background-color: rgb(251, 251, 251);
   font-size: 20px;
