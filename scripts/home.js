@@ -4,7 +4,8 @@ const homeCards = [{
   id: 'id1',
   name: "Automation Testing",
   image: "images/automation_picture.jfif",
-  description: ['Selenium', 'Cucumber', 'Java', 'Python', 'Jenkins', 'Maven', 'TestNG', 'Appium', 'SQL', 'Jira']
+  description: ['Selenium', 'Cucumber', 'Java', 'Python', 'Jenkins', 'Maven', 'TestNG', 'Appium', 'SQL', 'Jira'],
+  link: 'automation.html'
 },
 {
   id: 'id2',
@@ -17,7 +18,8 @@ const homeCards = [{
   id: 'id3',
   name: "Future Projects",
   image: 'images/future-projects-image.jpg',
-  description: ['SQL', 'React', 'Postman', 'Pytorch', 'DevOps', 'Typescript', 'AI', 'C', 'R', 'Linux']
+  description: ['SQL', 'React', 'Postman', 'Pytorch', 'DevOps', 'Typescript', 'AI', 'C', 'R', 'Linux'],
+  link: ''
 }]
 
 let projectsDisplaying = false;
