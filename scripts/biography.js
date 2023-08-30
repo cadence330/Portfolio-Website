@@ -7,7 +7,7 @@ let sideBarExpanded = false;
           <a>Projects</a>
         </div>
         <div class="side-bar automation-projects">
-          <a class="automation-link">Automation Projects</a>
+          <a href='automation.html' class="automation-link">Automation Projects</a>
         </div>
         <div class="side-bar frontend-projects">
           <a href='frontend.html'>Frontend Projects</a>

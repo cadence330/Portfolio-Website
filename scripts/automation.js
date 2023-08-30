@@ -1,27 +1,27 @@
-// import { expandProjects } from "./home.js";
-// import { sideBarExpanded } from "./home.js";
-
 const frontEndCards = [{
   id: 'id1',
-  name: "Ping Pong",
-  image: "images/ping-ping-image.png",
-  description: 'Created a playable game that keeps score',
-  link: 'https://github.com/cadence330/Ping_Pong'
+  name: "Cureskin Internship",
+  image: "images/cureskin_internship_picture.jfif",
+  description: 'Found and documented bugs on Jira, created a dynamic framework to automate testing on pages assigned to me',
+  tech: 'Python, Selenium, Jira, Git, TestLogger',
+  link: 'https://github.com/cadence330/Cureskin_Project'
 },
 {
   id: 'id2',
-  name: `Quote Generator`,
-  image: "images/kanye-project.png",
-  description: 'Use a free API to post a message on a designed canvas',
-  link: 'https://github.com/cadence330/Quote-Generator'
+  name: `Careerist Internship`,
+  image: "images/careerist_internship.png",
+  description: 'Learned the basics of Selenium and automated testing. Worked with Appium and Jenkins ',
+  tech: 'Python, Selenium, Appium, BrowserStack',
+  link: 'https://github.com/cadence330/python-selenium-automation'
 },
-{
+/*{
   id: 'id3',
   name: 'Automated Birthday Wisher',
   image: 'images/birthday_project.jfif',
   description: "Based on csv data, automatically send email to user with birthday when the day comes",
-  link: "https://github.com/cadence330/Birthday-Wisher",
-}]
+  tech: '',
+  link: "",
+}*/]
 
 let cardHTML = ''
     frontEndCards.forEach((card) => {
@@ -31,7 +31,7 @@ let cardHTML = ''
           <div class="project-card-description">
             <ul class="project-title">${card.name}</ul>
             <ul class="project-description">${card.description}</ul>
-            <ul class="project-tech">Turtle Library, UI</ul>
+            <ul class="project-tech">${card.tech}</ul>
             <ul>Code <a target='_blank' href=${card.link} class="code-link">Here</a></ul>
           </div>
         </div>
@@ -57,7 +57,6 @@ let cardHTML = ''
           <a href='frontend.html'>Frontend Projects</a>
         </div>
         `;
-        console.log('hello');
         sideBarExpanded = true;
       } else if (sideBarExpanded) {
         document.querySelector('.projects').innerHTML =
