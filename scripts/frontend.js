@@ -1,6 +1,3 @@
-// import { expandProjects } from "./home.js";
-// import { sideBarExpanded } from "./home.js";
-
 const frontEndCards = [{
   id: 'id1',
   name: "Ping Pong",

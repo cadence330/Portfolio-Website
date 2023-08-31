@@ -75,13 +75,8 @@ document.querySelector('.projects-button').addEventListener('click', () => {
   document.querySelector('.content-projects-container').innerHTML = 
   showCards(homeCards);
   document.querySelector('.content-contact-container').classList.add('is-showing');
-  // document.getElementById('id2').addEventListener('click', () => {
-  //   goToFrontEndPage();
-  // })
   const projectCards = document.querySelectorAll('.content-projects-card')
   });
-
-
 
 export let sideBarExpanded = false;
 export const expandProjects = (sideBarExpanded) => {
@@ -101,10 +96,6 @@ export const expandProjects = (sideBarExpanded) => {
       `;
       console.log('hello');
       sideBarExpanded = true;
-      // document.querySelector('.frontend-projects').addEventListener('click', () => {
-      //   goToFrontEndPage();
-      // })
-      // document.querySelectorAll('.project-card')
     } else if (sideBarExpanded) {
       document.querySelector('.projects').innerHTML =
       `<a>Projects</a>`;

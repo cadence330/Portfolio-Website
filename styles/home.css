@@ -70,7 +70,6 @@
   border-color: white;
   border-width: 2px;
   background-color: black;
-  /* background-color: rgb(235, 235, 235); */
   border-radius: 10px;
   margin-right: 10px;
   width: 20vw;
@@ -111,22 +110,18 @@
   box-shadow: 0px 0px 10px rgba(255, 255, 0, 0.5);
 }
 
-
-/* Keep your existing CSS rules */
-
-/* Add a media query to stack the content project sections vertically on smaller screens */
 @media screen and (max-width: 600px) {
   .content-container {
-    width: 100%; /* Adjust the width to take the full screen width */
+    width: 100%;
   }
 
   .content-projects {
-    flex-direction: column; /* Stack the content project sections vertically */
+    flex-direction: column;
   }
 
   .content-testing-projects,
   .content-frontend-projects {
-    width: 100%; /* Make them take the full width of the container */
-    margin: 0; /* Remove any margin */
+    width: 100%;
+    margin: 0;
   }
 }

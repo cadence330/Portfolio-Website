@@ -13,15 +13,7 @@ const frontEndCards = [{
   description: 'Learned the basics of Selenium and automated testing. Worked with Appium and Jenkins ',
   tech: 'Python, Selenium, Appium, BrowserStack',
   link: 'https://github.com/cadence330/python-selenium-automation'
-},
-/*{
-  id: 'id3',
-  name: 'Automated Birthday Wisher',
-  image: 'images/birthday_project.jfif',
-  description: "Based on csv data, automatically send email to user with birthday when the day comes",
-  tech: '',
-  link: "",
-}*/]
+}];
 
 let cardHTML = ''
     frontEndCards.forEach((card) => {

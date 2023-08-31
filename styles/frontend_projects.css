@@ -26,7 +26,6 @@
   object-fit: contain;
   height: 100%;
   border-radius: 20px;
-  /* width: 200px; */
 }
 
 .project-card-description {
@@ -49,5 +48,3 @@
 .code-link {
   text-decoration: underline;
 }
-
-

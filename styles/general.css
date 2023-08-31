@@ -4,8 +4,6 @@
   font-family: 'Ubuntu', sans-serif;
 }
 
-/******load projects with foreach. project containers can show how the project looks. description. github link*********/
-
 body {
   height: 600px;
   background-image: url('/images/background_image.jfif');
